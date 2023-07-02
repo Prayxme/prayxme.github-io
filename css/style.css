@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900;&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     border: none;
     outline: none;
-        scroll-behavior: smooth;
-        font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
 }
 
-:root { 
+:root {
     --bg-color: #fdfdfd;
     --text-color: #333;
     --main-color: #754ef9;
@@ -19,12 +19,12 @@
     --shadow-color: rgba(0, 0, 0, .2);
 }
 
-html{
+html {
     font-size: 62.5%;
     overflow-x: hidden;
 }
 
-body{
+body {
     background: var(--bg-color);
     color: var(--text-color);
 }
@@ -72,7 +72,7 @@ body{
 }
 
 .navbar a.active::before {
-    content:'';
+    content: '';
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -92,12 +92,12 @@ body{
     cursor: pointer;
 }
 
-.header.sticky #darkMode-icon{
+.header.sticky #darkMode-icon {
     color: var(--text-color);
     opacity: .9;
 }
 
-section{
+section {
     min-height: 100vh;
     padding: 10rem 7% 2rem;
 }
@@ -111,13 +111,13 @@ section{
     max-width: 44rem;
 }
 
-.home-content h3{
+.home-content h3 {
     font-size: 3.2rem;
     font-weight: 700;
     line-height: .3;
 }
 
-.home-content h1{
+.home-content h1 {
     font-size: 5.6rem;
     font-weight: 700;
     margin-bottom: .3rem;
@@ -127,7 +127,7 @@ section{
     font-size: 1.6rem;
 }
 
-.home-content .social-media a{
+.home-content .social-media a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -169,7 +169,7 @@ section{
 }
 
 .home .profession-container {
-    position:absolute;
+    position: absolute;
     top: 50%;
     right: 0;
     transform: translateY(-50%);
@@ -179,7 +179,7 @@ section{
     pointer-events: none;
 }
 
-.home .profession-container .profession-box{
+.home .profession-container .profession-box {
     position: absolute;
     top: 0;
     right: 0;
@@ -194,7 +194,7 @@ section{
 .home .profession-box .profession {
     position: absolute;
     left: 0;
-    display: flex;  
+    display: flex;
     align-items: center;
     flex-direction: column;
     color: var(--main-color);
@@ -217,16 +217,16 @@ section{
     font-size: 3.8rem;
 }
 
-.home .profession h3{
+.home .profession h3 {
     font-size: 3.2rem;
     line-height: 1;
     font-weight: 600;
 }
 
-.home .profession-box .circle{
+.home .profession-box .circle {
     width: 560px;
     height: 560px;
-    border:  3px solid var(--main-color);
+    border: 3px solid var(--main-color);
     border-radius: 50%;
 }
 
@@ -242,7 +242,7 @@ section{
     border-left: 384px solid transparent;
 }
 
-.home-img img{
+.home-img img {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -250,11 +250,11 @@ section{
     pointer-events: none;
 }
 
-span{
+span {
     color: var(--main-color);
 }
 
-.about  {
+.about {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -275,7 +275,7 @@ span{
     line-height: 1.2;
 }
 
-.about-content h3{
+.about-content h3 {
     font-size: 2rem;
 }
 
@@ -284,7 +284,7 @@ span{
     margin: 2rem 0 3rem;
 }
 
-.services h2{
+.services h2 {
     margin-bottom: 5rem;
     padding-bottom: 7rem;
 }
@@ -293,7 +293,7 @@ span{
     margin-bottom: 5rem;
 }
 
-.services .services-container{
+.services .services-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -322,12 +322,13 @@ span{
     font-size: 7rem;
     color: var(--main-color);
 }
-.services-box h3{
+
+.services-box h3 {
     font-size: 2.6rem;
     transition: .5 ease;
 }
 
-.services-box:hover h3{
+.services-box:hover h3 {
     color: var(--main-color);
 }
 
@@ -337,10 +338,10 @@ span{
 }
 
 .portfolio {
-    padding-bottom: 10rem;   
+    padding-bottom: 10rem;
 }
 
-.portfolio h2{
+.portfolio h2 {
     margin-bottom: 4rem;
 }
 
@@ -365,7 +366,7 @@ span{
 }
 
 .portfolio-box:hover img {
-    transform: scale(1.1);    
+    transform: scale(1.1);
 }
 
 .portfolio-box .portfolio-layer {
@@ -386,20 +387,20 @@ span{
     transition: .5s ease;
 }
 
-.portfolio-box:hover .portfolio-layer{
+.portfolio-box:hover .portfolio-layer {
     opacity: 1;
 }
 
-.portfolio-layer h4{
+.portfolio-layer h4 {
     font-size: 3rem;
 }
 
-.portfolio-layer p{
+.portfolio-layer p {
     font-size: 1.6rem;
     margin: .3rem 0 1rem;
 }
 
-.portfolio-layer a{
+.portfolio-layer a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -409,7 +410,149 @@ span{
     border-radius: 50%;
 }
 
-.portfolio-layer a{
+.portfolio-layer a {
     font-size: 2rem;
     color: #333;
+}
+
+
+.testimonial-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 5rem 1rem;
+}
+
+.testimonial-container .testimonial-wrapper {
+    position: relative;
+    max-width: 90rem;
+    width: 100%;
+    padding: 5rem;
+}
+
+.testimonial-wrapper .testimonial-box {
+    padding: 1rem;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+
+.testimonial-content .testimonial-slide {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: var(--bg-color);
+    border-radius: 2rem;
+    box-shadow: 0 .1rem .5rem var(--shadow-color);
+    padding: 3rem 5rem;
+    border-top: .8rem solid var(--main-color);
+    border-bottom: .8rem solid var(--main-color);
+}
+
+.testimonial-slide img {
+    width: 14rem;
+    height: 14rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border: .5rem solid var(--bg-color);
+    outline: .5rem solid var(--main-color);
+}
+
+.testimonial-slide h3 {
+    font-size: 2.5rem;
+    margin: 2rem 0;
+}
+
+.testimonial-slide p {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.testimonial-box .swiper-pagination-bullet {
+    background: rgba(0, 0, 0, .8);
+}
+
+.testimonial-box .swiper-pagination-bullet-active {
+    background: var(--main-color);
+}
+
+.contact h2{
+    margin-bottom: 3rem;
+}
+
+.contact form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--bg-color);
+    border-radius: .8rem;
+    margin: .7rem 0;
+    box-shadow: 0 .1rem .5rem var(--shadow-color);
+}
+
+.contact form .input-box input{
+    width: 49%;
+}
+
+.contact form textarea{
+    resize: none;
+}
+
+.contact form .btn{
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 7%;
+    background: var(--main-color);
+}
+
+.footer-text p{
+    font-size: 1.6rem;
+    color: var(--white-color);
+}
+
+.footer-iconTop a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: var(--white-color);
+    border-radius: .8rem;
+    border: .2rem solid var(--main-color);
+    outline: .2rem solid transparent;
+    transition: .5s ease;
+}
+
+.footer-iconTop a:hover {
+    outline-color: var(--white-color);
+
+
+}
+.footer-iconTop a i{
+    font-size: 2.4rem;
+    color: #333;
+    
+
 }
